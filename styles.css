@@ -1,34 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
 }
-/*html {
-  height: 100%;
-} */
+
+body {
+  background-color: black;
+
+  --primary-color: red;
+}
 
 .nav-leiste {
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   height: 5rem;
 }
 
 .nav-top {
   color: white;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-family: "Inter" sans-serif;
+  font-size: 1rem;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 200ms ease-in-out;
 }
 
 .nav-top:hover {
-  color: red;
+  color: var(--primary-color);
 }
 
 .hero {
-  height: 100vh;
+  height: calc(100vh - 5rem);
   background-image: linear-gradient(#070707c7, #0808089f), url(hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,20 +86,28 @@
 .callToAction:hover {
   background-color: transparent;
   border-radius: 1rem;
-  border-color: red;
+  border-color: var(--primary-color);
   border-style: 1px solid;
-  color: red;
+  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 300px) {
+  .nav-top {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
   .name {
-    padding-top: 12rem;
+    padding-top: 8rem;
     font-size: 4rem;
     line-height: -5rem;
   }
   .undertitle {
-    font-size: 2rem;
-    padding-bottom: 8rem;
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
     padding-top: 1rem;
   }
   .callToAction {
@@ -104,22 +118,30 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .nav-leiste {
+    gap: 2rem;
+  }
+
   .name {
-    font-size: 8rem;
+    font-size: 4rem;
   }
   .undertitle {
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
   }
 }
 
 @media only screen and (min-width: 1000px) {
+  .nav-leiste {
+    gap: 4rem;
+  }
+
   .name {
     font-size: 8rem;
     line-height: -5rem;
 
     .undertitle {
       padding-bottom: 0.5rem;
-      font-size: 11rem;
+      font-size: 9rem;
     }
   }
 }
