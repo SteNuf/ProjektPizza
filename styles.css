@@ -91,6 +91,63 @@ body {
   color: var(--primary-color);
 }
 
+.websiteAboutUs {
+  display: grid;
+  font-family: "Inter";
+  max-width: 85%;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.aboutUs_container {
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.aboutUs_Headline {
+  font-size: 2rem;
+  padding-top: 4rem;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: red;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.AboutUs-text {
+  color: rgb(214, 202, 202);
+  font-size: 1rem;
+  padding-bottom: 3.5rem;
+  display: block;
+}
+
+.About_us_image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  gap: 1rem;
+}
+
+.big-image {
+  width: 50%;
+  height: 88%;
+}
+
+.small_image {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+
 @media only screen and (min-width: 300px) {
   .nav-top {
     color: white;
