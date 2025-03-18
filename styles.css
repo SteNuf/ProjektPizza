@@ -181,7 +181,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-}
+
 
 @media only screen and (min-width: 600px) {
   .nav-leiste {
@@ -194,9 +194,38 @@ body {
   .undertitle {
     padding-bottom: 8rem;
   }
+
+  }
+
+@media only screen and (max-width:1000px) {
+  .websiteAboutUs {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUs_Headline {
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  
+  .AboutUs-text {
+    color: rgb(214, 202, 202);
+    font-size: 1rem;
+    padding-bottom: 3.5rem;
+    display: block;
+    text-align: left;
+  }  
 }
 
 @media only screen and (min-width: 1000px) {
+
   .nav-leiste {
     gap: 4rem;
   }
@@ -209,5 +238,11 @@ body {
       padding-bottom: 0.5rem;
       font-size: 9rem;
     }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .websiteAboutUs {
+    max-width: 1400px;
   }
 }
