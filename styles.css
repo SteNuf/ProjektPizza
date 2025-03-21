@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgba(24, 22, 22, 0.986);
 
   --primary-color: red;
 }
@@ -34,8 +34,8 @@ body {
 }
 
 .hero {
+  background-image: linear-gradient(#050505c0, #080808d2), url(hero.jpg);
   height: calc(100vh - 5rem);
-  background-image: linear-gradient(#070707c7, #0808089f), url(hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,51 @@ body {
   height: 100%;
 }
 
-.open-top {
+.openTop {
+  background-image: linear-gradient(#070707ce, #080808b4), url(info.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-right: 0;
+  width: 119.5rem;
+  height: 40rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.open_time {
+  color: white;
+  font-family: "INTER";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-decoration: underline red;
+}
+
+.week_times {
+  font-size: 2rem;
+  font-family: "Inter";
+  text-align: center;
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  justify-content: center;
+}
+
+.day {
+  color: rgb(214, 202, 202);
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.opening {
+  color: white;
+  text-align: right;
+}
+
+.test {
   color: white;
 }
 
@@ -181,7 +225,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-
+}
 
 @media only screen and (min-width: 600px) {
   .nav-leiste {
@@ -194,10 +238,9 @@ body {
   .undertitle {
     padding-bottom: 8rem;
   }
+}
 
-  }
-
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   .websiteAboutUs {
     grid-template-columns: 1fr;
   }
@@ -214,18 +257,17 @@ body {
     text-transform: uppercase;
     width: fit-content;
   }
-  
+
   .AboutUs-text {
     color: rgb(214, 202, 202);
     font-size: 1rem;
     padding-bottom: 3.5rem;
     display: block;
     text-align: left;
-  }  
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-
   .nav-leiste {
     gap: 4rem;
   }
