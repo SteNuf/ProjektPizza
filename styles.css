@@ -182,6 +182,7 @@ body {
   padding-bottom: 0.5rem;
   font-size: 2rem;
   text-decoration: underline red;
+  letter-spacing: 0.5rem;
 }
 
 .week_times {
@@ -220,10 +221,38 @@ body {
   padding-left: 1.5rem;
 }
 
+.Erreichbarkeit {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.contakt-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.last-pic {
+  max-width: 65%;
+}
+
+.adress {
+  margin-right: 30rem;
+}
+
+.head {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
 .anschrift {
   color: var(--textTwo-color);
   font-family: "INTER";
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .test {
