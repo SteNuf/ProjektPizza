@@ -294,7 +294,7 @@ body {
 .footer_top {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -309,6 +309,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .footerleiste {
@@ -317,6 +318,16 @@ body {
   letter-spacing: 0.1rem;
   gap: 4rem;
   padding: 2rem 1rem;
+}
+
+.copyright {
+  color: var(--text-color);
+  font-size: 0.7rem;
+  font-family: "INTERS";
+  padding-top: 2rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.4rem;
+  justify-content: center;
 }
 
 /*-----------------------------------Responsive Begin---------------------------------*/
